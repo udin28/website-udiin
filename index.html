@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beranda</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        @media only screen and (max-width: 600px) {
+  nav {
+    display: block;
+  }
+  nav a {
+    display: block;
+    margin-bottom: 10px;
+  }
+}
+
+        img {
+      display: block;
+      margin: 10px auto;
+      width: 250px;
+      height: 50px;
+    float: left;
+    margin-left: 10px; /* Jika perlu memberikan ruang antara logo dan elemen lain di header */
+  }
+        header {
+            background-color: #111111;
+            color: limegreen;
+            text-align: center;
+            padding: 0.3em;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            max-width: auto;
+            height: auto;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 30px;
+        }
+
+        h1, h2 {
+            color: limegreen;
+        }
+        h3 {
+            color: #333;
+        }
+
+        footer {
+            background-color: #111111;
+            color: #fff;
+            text-align: center;
+            padding: 0.3px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .button-container {
+            text-align: center;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px;
+            background-color: #111111;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #111111;
+        }
+        .home-button {
+    display: inline-block;
+    margin-bottom: 50px;
+    padding: 20px 30px;
+    background-color: #111111;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <img src="website logo.png" alt="Logo Situs" class="logo">
+        <div>
+            <h2>WELCOME TO WEBSITE UDIN</h2>
+        </div>
+    </header>
+
+    <main>
+        <div class="button-container">
+            <button class="home-button" onclick="goHome()">Menu Utama</button>
+        </div>
+
+        <section id="section1">
+            <h3>TUJUAN WEBSITE INI DI BUAT</h3>
+            <p>Website ini di buat untuk menyediakan beberapa materi yang mungkin kalian butuhkan</p>
+        </section>
+
+        <section id="section2">
+            <h3>KAPAN WEBSITE INI DI BUAT</h3>
+            <p>Website ini di buat pada Desember 2023 lalu dengan niat untuk membantu para pelajar menemukan materi yang mereka butuhkan. website ini masih tahap awal atau masih dalam proses pemgembangan dan mungkin kedepanya bisa lebih berkembang lagi baik dari segi desain website, materi-materi yang akan di sediakan, dll.</p>
+        </section>
+
+
+        <!-- Tambahkan lebih banyak bagian utama sesuai kebutuhan -->
+    </main>
+    <script src="script.js"></script>
+
+    <footer>
+        <p>&copy; 2024 Udin Web | Hak Cipta Dilindungi</p>
+    </footer>
+</body>
+</html>

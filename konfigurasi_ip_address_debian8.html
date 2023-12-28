@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style 4.css">
+    <title>Konfigurasi IP Address - Debian 8</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>KONFIGURASI IP ADDRESS PADA LINUX DEBIAN 8</h1>
+        </header>
+        
+        <section class="steps">
+            <div class="step">
+                <div class="step-info">
+                    <h3>Langkah 1</h3>
+                    <p>Pastikan login menggunakan akun super user</p>
+                </div>
+            </div>
+            <div class="step">
+                <div class="step-info">
+                    <h3>Langkah 2</h3>
+                    <p>Ketikan perintah <code class="command" >nano /etc/network/interfaces</code> untuk konfigurasi ip address.</p>
+                </div>
+            </div>
+            <div class="step">
+                <div class="step-info">
+                    <h3>Langkah 3</h3>
+                    <p>Ubah ip address menjadi seperti gambar di bawah ini</p>
+                </div>
+                <img src="konfig ip.png" alt="Step 1">
+            </div>
+            <div class="step">
+                <div class="step-info">
+                    <h3>Langkah 4</h3>
+                    <p>Setelah semua di ubah lalu save dengan menekan <code class="command">Ctrl+c-y-ENTER</code></p>
+                </div>
+            </div>
+            <div class="step">
+                <div class="step-info">
+                    <h3>Langkah 5</h3>
+                    <p>Lalu restart network dengan mengetikan perintah <code class="command">/etc/init.d/networking restart</code></p>
+                    <p>atau</p>
+                    <p>Menggunakan perintah <code class="command">service networking restart</code></p>
+                </div>
+            </div>
+            <div class="step">
+                <div class="step-info">
+                    <h3>Langkah 6</h3>
+                    <p>Periksa apakah konfigurasi ip itu berhasil atau tidak dengan memasukan  perintah <code class="command">ifconfig</code> jika berhasil maka akan seperti ini</p>
+                </div>
+                <img src="ifconfig.png" alt="Step 1">
+            </div>
+            <div class="step">
+                <div class="step-info">
+                    <h3>Langkah 7</h3>
+                    <p>Jangan lupa untuk mengganti ip komputer/laptop yang kita gunakan menjadi ip dengan segmen yang sama dengan yang tadi kita konfigurasi pada linux debian</p>
+                    <p>Seperti gambar di bawah ini</p>
+                </div>
+                <img src="network.png" alt="Step 1">
+            </div>
+            <div class="step">
+                <div class="step-info">
+                    <h3>Langkah 8</h3>
+                    <p>Setelah ip pada komputer/laptop kita sudah di ubah. Kita bisa test apakah konfigurasi itu berhasil atau tidak</p>
+                    <p>Dengan memasukan perintah <code class="command">ping 192.168.0.2 dan ping 192.168.0.1</code> jika berhasil maka akan seperti ini</p>
+                </div>
+                <img src="ping.png" alt="">
+            </div>
+            <div class="step">
+                <div class="step-info">
+                    <h3>Langkah 9</h3>
+                    <p>Selesai! Sekarang IP address pada Debian 8 telah dikonfigurasi.</p>
+                </div>
+            </div>
+        </section>
+
+        <button class="home-button" onclick="goHome()">Back To Materi</button>
+    </div>
+    <script src="script 2.js"></script>
+</body>
+</html>
