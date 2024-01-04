@@ -94,5 +94,5 @@ transition: border-bottom-color 0.2s ease-in-out;
 }
 
 main a:hover {
-border-bottom-color: #fff;
+border-bottom-color: #111111;
 }
